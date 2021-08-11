@@ -41,11 +41,7 @@ class Bot extends Client {
             this.on(event.event, event.run.bind(null, this));
         });
 
-        try {
-            this.login(TOKEN);
-        } catch(err) {
-            console.error(err);
-        }
+        this.login(TOKEN);
     }
 
 }
