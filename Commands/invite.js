@@ -6,7 +6,7 @@ module.exports = new Command({
 
     async run(msg, args, bot){
 
-        msg.reply('https://cutt.ly/Invite-Leira')
+        msg.reply('https://cutt.ly/Invite-Leira-Bot')
 
     }
 });

@@ -31,5 +31,12 @@ module.exports = new Event("messageCreate", (bot, msg) => {
 
     if (!command) return;
 
+    if (command.permission){
+
+        const permission = msg.member.permissions.has(command.permission);
+
+        if (!permission) return msg.reply(`Anda bukan ${command.permission}`)
+    }
+
     command.run(msg, args, bot);
 });
