@@ -12,8 +12,5 @@
   "dependencies": {
     "discord.js": "^13.0.1",
     "dotenv": "^10.0.0"
-  },
-  "scripts" : {
-    "start": "node index.js"
   }
 }
