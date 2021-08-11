@@ -22,6 +22,11 @@ module.exports = new Command({
                         uUser = msg.guild.members.cache.find(user => user.id == "873840070849888276");
                         reason = "Menabok paduka!";
                     } 
+
+                    if (!rUser.voice.channel){
+                        return msg.reply(`User <@${rUser}> sedang tidak di voice channel!`);
+                    }
+
                     let reportEmbed = new MessageEmbed()
                     .setTitle("Tabok Online")
                     .setColor('#fc03e3')
