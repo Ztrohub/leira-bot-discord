@@ -1,4 +1,4 @@
-const {Message, Interaction, PermissionString} = require("discord.js");
+const {Message, Interaction} = require("discord.js");
 const Bot = require("./Bot.js")
 
 /**
@@ -14,14 +14,13 @@ function RunFunction(msg, args, bot) {
 
 class Command {
     /**
-     * @typedef {{name: string, description: string, permission: PermissionString, run: RunFunction}} CommandOptions
+     * @typedef {{name: string, description: string, run: RunFunction}} CommandOptions
      * @param {CommandOptions} options 
      */
 
     constructor(options) {
         this.name = options.name;
         this.description = options.description;
-        this.permission = options.permission;
         this.run = options.run;
     }
 }

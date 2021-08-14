@@ -1,6 +1,4 @@
 // RUN "nodemon -e js"
-// TURN OFF = "heroku ps:scale worker=0"
-// TURN ON = "heroku ps:scale worker=1"
 
 console.clear();
 

@@ -17,8 +17,8 @@ module.exports = new Command({
             .addField('\u200b', '__**CARA PAKE LEIRA**__')
             .addField(
             `⚙️ SETTINGS`, `
-                    \`${bot.prefix}prefix <simbol>\` - ganti prefix Leira **(SOON)**
-                    \`${bot.prefix}greeting\` - greeting member baru **(SOON)**
+                    \`${bot.prefix}prefix <simbol>\` - ganti prefix Leira
+                    \`${bot.prefix}greeting\` - greeting member baru
                 `)
             
             .addField(
@@ -31,7 +31,7 @@ module.exports = new Command({
 
             .addField(
                 `💻 CODING`, `
-                    \`${bot.prefix}git\` - alert repo git **(SOON)**
+                    \`${bot.prefix}git\` - alert repo git
                 `)
             
             .addField(
